@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 while true
 do
 	cpu=$(grep 'cpu ' /proc/stat | awk '{print ($2+$4)*100/($2+$4+$5)}')
