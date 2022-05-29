@@ -1,3 +1,3 @@
-#!/bin/bash/
+#!/bin/bash
 echo "nginx index create OK"
 
