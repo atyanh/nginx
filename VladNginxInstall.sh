@@ -1,17 +1,19 @@
-#!/bin/bash
+#!/bin/bash 
 
-if [ $(which nginx) -n ] 
+set -e
+
+if [ -z $(which nginx) ] 
 then
 	sudo apt install -y nginx
 fi
 
-set echo off
 sudo nginx -t
-set echo on
 
-if [[ $? == 0 ]]
+errcode=$?
+if [[ $errcode == 0 ]]
 then
 	echo "nginx is configured properly"
 else
 	echo "nginx is not configured properly"
+	exit $errcode
 fi
