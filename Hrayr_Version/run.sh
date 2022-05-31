@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./script1.sh
+./nginx_install.sh
 if [ $? -gt 0 ]
 then
 	echo "Something is wrong with nginx server"
@@ -9,7 +9,7 @@ else
 	echo "Script 1 works correctly, Nginx is working"
 fi
 
-./script2.sh
+./nginx_conf.sh
 if [ $? -gt 0 ]
 then
 	echo "Something is wrong with downloading file"
@@ -18,7 +18,7 @@ else
 	echo "Script 2 works correctly, file is downloaded"
 fi
 
-./script3.sh
+./index_cr.sh
 if [ $? -gt 0 ]
 then
 	echo "Something is wrong with creating index.file"
@@ -27,10 +27,10 @@ else
 	echo "index file is created"
 fi
 
-./script4.sh &
+./update_stats.sh &
 if [ $? -gt 0 ]
 then
-	echo "Something wrong with monitoring file"
+	echo "Something is wrong with monitoring file"
 	exit
 else
 	echo "Monitoring is working"

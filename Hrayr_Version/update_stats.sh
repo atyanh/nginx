@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Checking Statisctics and sending it to web page
+#They will be checked every 10 seconds
 
 while true
 do
