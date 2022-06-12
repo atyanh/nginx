@@ -12,9 +12,9 @@ do
 	echo "<HEAD>" >> /var/www/bootcamp_aca/index.html
 	echo "<TITLE>Stats</TITLE>" >> /var/www/bootcamp_aca/index.html
 	echo "</HEAD>" >> /var/www/bootcamp_aca/index.html
-	echo "<H2>CPU Usage: $cpu%</H2>" #>> /var/www/bootcamp_aca/index.html
-	echo "<H2>Memory Usage: $mem</H2>" #>> /var/www/bootcamp_aca/index.html
-	echo "<H2>Disk Usage: $disk</H2>" #>> /var/www/bootcamp_aca/index.html
+	echo "<H2>CPU Usage: $cpu%</H2>" >> /var/www/bootcamp_aca/index.html
+	echo "<H2>Memory Usage: $mem</H2>" >> /var/www/bootcamp_aca/index.html
+	echo "<H2>Disk Usage: $disk</H2>" >> /var/www/bootcamp_aca/index.html
 	echo "</BODY>" >> /var/www/bootcamp_aca/index.html
 	echo "</HTML>" >> /var/www/bootcamp_aca/index.html
 	sleep 10
